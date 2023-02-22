@@ -1,30 +1,61 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Header msg="Vite + Vue" />
+  <main>
+    <router-view></router-view>
+  </main>
+  <Footer/>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script setup>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
 }
 </style>
