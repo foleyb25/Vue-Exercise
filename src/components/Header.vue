@@ -4,8 +4,8 @@
     <p>A collection of Vue exercises for instructors to use in their courses.</p>
     <div class="link-container">
       <ul>
-        <li><router-link to="/home"></router-link>Home</li>
-        <li><router-link to="/about"></router-link>About</li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
       </ul>
     </div>
   </header>
