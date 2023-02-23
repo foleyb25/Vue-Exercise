@@ -22,17 +22,16 @@ body {
 main {
 	position: absolute;
 	top: 100px;
-	bottom: 80px;
+	bottom: 100px;
 	left: 0;
 	right: 0;
 	width: 100%;
-	margin: auto;
-	max-width: 800px;
 	margin-top: 16px;
 	color: #f1f1f1;
 	display: flex;
 	justify-content: center;
 	align-items: start;
+	overflow-y: scroll;
 }
 
 main p {
