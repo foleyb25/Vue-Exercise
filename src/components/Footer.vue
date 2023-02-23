@@ -4,8 +4,6 @@
 	</footer>
 </template>
 
-<script></script>
-
 <style scoped>
 footer {
 	padding: 20px;
