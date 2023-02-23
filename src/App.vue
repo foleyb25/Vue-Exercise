@@ -1,61 +1,64 @@
 <template>
-  <Header msg="Vite + Vue" />
-  <main>
-    <router-view></router-view>
-  </main>
-  <Footer/>
+	<Header />
+	<main>
+		<router-view></router-view>
+	</main>
+	<Footer />
 </template>
 
 <script setup>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <style>
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #007acc;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 48px;
-}
-
-header p {
-  margin-top: 10px;
-  font-size: 24px;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
 }
 
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+	position: absolute;
+	top: 100px;
+	bottom: 80px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin: auto;
+	max-width: 800px;
+	margin-top: 16px;
+	color: #f1f1f1;
+	display: flex;
+	justify-content: center;
+	align-items: start;
 }
 
 main p {
-  font-size: 18px;
-  line-height: 1.5;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
-footer {
-  background-color: #007acc;
-  color: white;
-  padding: 20px;
-  text-align: center;
+Header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px; /* adjust as needed */
+	background-color: #f1f1f1; /* header background color */
+	z-index: 999; /* set a high z-index to ensure the header appears above other elements */
+	color: black;
 }
 
-footer p {
-  margin: 0;
-  font-size: 16px;
+Footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px; /* adjust as needed */
+	background-color: #f1f1f1; /* footer background color */
+	z-index: 999; /* set a high z-index to ensure the footer appears above other elements */
+	color: black;
 }
 </style>
