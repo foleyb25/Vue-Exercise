@@ -3,8 +3,8 @@
 		<h1>Products</h1>
 		<div class="grid-container">
 			<!-- TODO: Render a list of products using the v-for directive. Inside the v-for render a ProductCard Component   -->
-			<div v-for="product in products" :key="product.id">
-				<ProductCard class="product-card" :product="product" />
+			<div class="product-card" v-for="product in products" :key="product.id">
+				<ProductCard :product="product" />
 			</div>
 		</div>
 	</div>
@@ -100,8 +100,8 @@ export default {
 }
 
 .product-card {
-	background-color: #ccc;
-	height: 300px;
-	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 8px;
 }
 </style>
