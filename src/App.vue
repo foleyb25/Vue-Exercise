@@ -45,9 +45,9 @@ Header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 60px; /* adjust as needed */
-	background-color: #f1f1f1; /* header background color */
-	z-index: 999; /* set a high z-index to ensure the header appears above other elements */
+	height: 60px;
+	background-color: #f1f1f1;
+	z-index: 999;
 	color: black;
 }
 
@@ -56,9 +56,9 @@ Footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 40px; /* adjust as needed */
-	background-color: #f1f1f1; /* footer background color */
-	z-index: 999; /* set a high z-index to ensure the footer appears above other elements */
+	height: 40px;
+	background-color: #f1f1f1;
+	z-index: 999;
 	color: black;
 }
 </style>

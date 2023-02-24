@@ -15,9 +15,7 @@
 <script>
 export default {
 	setup() {
-		/*
-        TODO: Setup props to accept a product object
-        */
+		// TODO: Setup props to accept a product object
 	},
 };
 </script>

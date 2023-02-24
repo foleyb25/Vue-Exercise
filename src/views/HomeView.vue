@@ -1,6 +1,6 @@
 <template>
 	<h1>Products</h1>
-	/** TODO: Render a list of products using the v-for directive */
+	<!-- TODO: Render a list of products using the v-for directive  -->
 </template>
 
 <script>
