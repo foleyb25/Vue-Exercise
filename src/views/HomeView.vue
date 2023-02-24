@@ -1,13 +1,21 @@
 <template>
-	<h1>Products</h1>
-	<!-- TODO: Render a list of products using the v-for directive  -->
+	<div class="product-content">
+		<h1>Products</h1>
+		<div class="grid-container">
+			<!-- TODO: Render a list of products using the v-for directive. Inside the v-for pass each product as a prop to ProductCard Component   -->
+		</div>
+	</div>
 </template>
 
 <script>
 import { ref } from 'vue';
+// TODO: Import the ProductCard component
 
 export default {
+	//TODO: Add the ProductCard component to the components object
+
 	setup() {
+		//Here is where we will store our products. These will be passed to the ProductCard component
 		const products = ref([
 			{
 				id: 1,
@@ -64,10 +72,31 @@ export default {
 			},
 		]);
 
-		// expose to template and other options API hooks
+		//We are exposing the products array to the template
 		return {
 			products,
 		};
 	},
 };
 </script>
+
+<style scoped>
+.product-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: scroll;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	width: 100%;
+}
+.product-card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 8px;
+}
+</style>

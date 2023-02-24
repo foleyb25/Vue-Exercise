@@ -32,6 +32,8 @@ export default {
 		const branches = ref({
 			'e1-passing-props':
 				'https://github.com/foleyb25/Vue-Exercise/tree/e1-passing-props',
+			'e1-passing-props-solution':
+				'https://github.com/foleyb25/Vue-Exercise/tree/e1-passing-props-solution',
 		});
 
 		// expose to template and other options API hooks
@@ -48,6 +50,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	background-color: #f1f1f1;
 	padding: 1rem;
 	border-radius: 0.25rem;
