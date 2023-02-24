@@ -6,7 +6,7 @@
 		<h3>{{ product.title }}</h3>
 		<p>{{ product.description }}</p>
 		<p>${{ product.price }}</p>
-		<p>{{ product.rating.rate }} out of {{ product.rating.count }} vote(s)</p>
+		<p>{{ product.rating.rate }}/5 ({{ product.rating.count }} votes)</p>
 	</div>
 </template>
 
