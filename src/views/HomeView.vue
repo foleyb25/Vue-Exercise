@@ -3,6 +3,7 @@
 		<h1>Products</h1>
 		<div class="grid-container">
 			<!-- TODO: Render a list of products using the v-for directive. Inside the v-for pass each product as a prop to ProductCard Component   -->
+			<div class="product-card"></div>
 		</div>
 	</div>
 </template>
